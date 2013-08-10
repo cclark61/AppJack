@@ -1,0 +1,7 @@
+To install: 
+	1.	Unpack (You've already done that)
+	2.	Place in your site's document root
+	3.	Place the something like the following in the <head> section of your site or application:
+
+		<link href="/appjack/appjack.css" rel="stylesheet" type="text/css" media="all">
+		<script type="text/javascript" src="/appjack/appjack.js" ></script>

@@ -1,0 +1,323 @@
+/***************************************************************************/
+/**
+* AppJack - The Web Application JavaScript and CSS Kit
+*
+* @package		AppJack
+* @author 		Christian J. Clark
+* @copyright	Copyright (c) Christian J. Clark
+* @license		http://www.gnu.org/licenses/lgpl-3.0.txt
+* @link			http://www.emonlade.net/appjack/
+* @version		0.5.1
+* @updated		Started: 4/23/2013, Updated: 5/1/2013
+**/
+/***************************************************************************/
+
+/*****************************************************************************/
+/* Jesus Christ, Son of God, Our Savior */
+/*****************************************************************************/
+/* John 14 (https://www.bible.com/bible/111/jhn.14.niv) */
+/* John 8:12 (https://www.bible.com/bible/111/jhn.8:12.niv) */
+/* John 13:34-35 (https://www.bible.com/bible/111/jhn.13.34-35.niv) */
+/* Matthew 22:36-40 (https://www.bible.com/bible/111/mat.22.36-40.niv) */
+/*****************************************************************************/
+
+/*****************************************************************************/
+/* Quick Helper Styles */
+/*****************************************************************************/
+.left { float: left; }
+.right { float: right; }
+.clear, clear-both, clear_both { clear: both; }
+.clear_left, .clear-left { clear: left; }
+.clear_right, .clear-right { clear: right; }
+.hidden { display: none; }
+.no_wrap, .no-wrap, .nowrap { white-space: nowrap; }
+.center { text-align: center; }
+.bold { font-weight: bold; }
+.underline { text-decoration: underline; }
+.italic { font-style: italic; }
+.width-auto { width: auto; }
+.required { color: red; }
+.cursor_pointer { cursor: pointer; }
+
+/****************************************************************/
+/* Record Set Styles */
+/****************************************************************/
+.rs {
+	background: white;
+}
+
+.rs > div,
+.rs > li,
+.rs > tr td,
+.rs > tbody tr td {
+	border-top: 1px solid #DDDDDD;
+	padding: 5px 2px;
+}
+
+.rs li {
+	display: block;
+}
+
+.rs-striped > div:nth-child(2n+1),
+.rs-striped > li:nth-child(2n+1) {
+    background-color: #F9F9F9;
+}
+
+.hl_change td,
+.hl_change {
+	background: #FFFFCD !important;
+}
+
+/****************************************************************/
+/* Server Side Validation Messages */
+/****************************************************************/
+.ssv_messages {
+	background: #FFFFD9;
+	border: 1px #D9D957 solid;
+	padding: 10px;
+	margin-bottom: 5px;
+	-moz-border-radius: 5px;
+	-webkit-radius: 5px;
+	border-radius: 5px;
+}
+
+.ssv_messages p {
+	margin-left: 10px;
+}
+
+/*****************************************************************************/
+/* To Do / Task Priorities */
+/*****************************************************************************/
+.priority0 { background: #666666; }
+.priority1 { background: blue; }
+.priority2 { background: green; }
+.priority3 { background: orange; }
+.priority4 { background: red; }
+
+/*****************************************************************************/
+/* Yes / No Flags */
+/*****************************************************************************/
+.flag,
+.status {
+	color: white;
+	padding: 2px 3px;
+	-moz-border-radius: 5px;
+	-webkit-radius: 5px;
+	border-radius: 5px;
+}
+.flag_yes, .status-yes { background: green; }
+.flag_no, .status-no { background: red; }
+.flag_no2, .status-no2 { background: #aaaaaa; }
+
+/*****************************************************************************/
+/* Rounded Corners */
+/*****************************************************************************/
+.rnd_corners {
+	-moz-border-radius: 5px;
+	-webkit-radius: 5px;
+	border-radius: 5px;
+}
+
+.rnd_corners_top {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+
+.rnd_corners_right {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+.rnd_corners_bottom {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+.rnd_corners_left {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+/*****************************************************************************/
+/* Filters */
+/*****************************************************************************/
+.filter_options {
+	background: #E6F0E6;
+    margin-bottom: 5px;
+    padding: 5px;
+	-moz-border-radius: 5px;
+	-webkit-radius: 5px;
+	border-radius: 5px;
+}
+
+.filters label {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.filters select {
+	margin-bottom: 0;
+	
+}
+
+.filters .filter {
+	margin-right: 10px;
+}
+
+/*****************************************************************************/
+/* Record Set Column / Width Styles */
+/*****************************************************************************/
+.icon_col { width: 5%; }
+.rs-col-1, width_1 { width: 1%; }
+.rs-col-2, width_2 { width: 2%; }
+.rs-col-3, width_3 { width: 3%; }
+.rs-col-4, width_4 { width: 4%; }
+.rs-col-5, width_5 { width: 5%; }
+.rs-col-6, width_6 { width: 6%; }
+.rs-col-7, width_7 { width: 7%; }
+.rs-col-8, width_8 { width: 8%; }
+.rs-col-9, width_9 { width: 9%; }
+.rs-col-10, width_10 { width: 10%; }
+.rs-col-15, width_15 { width: 15%; }
+.rs-col-20, width_20 { width: 20%; }
+.rs-col-25, width_25 { width: 25%; }
+.rs-col-30, width_30 { width: 30%; }
+.rs-col-35, width_35 { width: 35%; }
+.rs-col-40, width_40 { width: 40%; }
+.rs-col-45, width_45 { width: 45%; }
+.rs-col-50, width_50 { width: 50%; }
+.rs-col-55, width_55 { width: 55%; }
+.rs-col-60, width_60 { width: 60%; }
+.rs-col-65, width_65 { width: 65%; }
+.rs-col-70, width_70 { width: 70%; }
+.rs-col-75, width_75 { width: 75%; }
+.rs-col-80, width_80 { width: 80%; }
+.rs-col-85, width_85 { width: 85%; }
+.rs-col-90, width_90 { width: 90%; }
+.rs-col-95, width_95 { width: 95%; }
+.rs-col-100, width_100 { width: 100%; }
+
+/*****************************************************************************/
+/* Form Fields */
+/*****************************************************************************/
+.very_long_field,
+.very-long-field { width: 440px; }
+
+.long_field,
+.long-field { width: 330px; }
+
+.field { width: 220px; }
+
+.short_field,
+.short-field { width: 110px; }
+
+.very_short_field,
+.very-short-field { width: 55px; }
+
+/*****************************************************************************/
+/* Generic Icon Styles */
+/*****************************************************************************/
+.gen_icon, .gen_icon2, .gen_icon3 {
+	vertical-align: middle;
+	padding-right: 3px;
+}
+
+.gen_icon { padding-bottom: 2px; }
+.gen_icon2 { padding-bottom: 3px; }
+.gen_icon3 { padding-bottom: 4px; }
+
+/*****************************************************************************/
+/* Twitter Bootstrap Specific Styles */
+/*****************************************************************************/
+form.wide-labels .control-label {
+	width: 200px;
+}
+
+/*****************************************************************************/
+/*****************************************************************************/
+/* Responsive CSS Styles */
+/*****************************************************************************/
+/*****************************************************************************/
+
+/***********************************************************/
+/* Large desktop */
+/***********************************************************/
+@media (min-width: 1200px) {
+
+
+}
+
+/***********************************************************/
+/* Small Desktop */
+/***********************************************************/
+@media (min-width: 980px) {
+
+	
+}
+
+/***********************************************************/
+/* Portrait tablet to landscape and Desktop */
+/***********************************************************/
+@media (min-width: 768px) and (max-width: 979px) {
+
+	
+}
+
+/***********************************************************/
+/* Tablet */
+/***********************************************************/
+@media (max-width: 1024px) {
+
+
+}
+
+/***********************************************************/
+/* Landscape phone to portrait tablet */
+/***********************************************************/
+@media (max-width: 767px) {
+
+	.filters .filter_wrapper {
+		white-space: nowrap;
+		display: block;
+	}
+
+	.filters .filter_wrapper:nth-child(n+2) {
+		margin-top: 10px;
+	}
+}
+
+/***********************************************************/
+/* Landscape phones */
+/***********************************************************/
+@media (max-width: 480px) {
+
+	.filters .filter_wrapper {
+		white-space: normal
+	}
+
+}
+
+/***********************************************************/
+/* Portrait phones and down */
+/***********************************************************/
+@media (max-width: 320px) {
+
+
+}
+
