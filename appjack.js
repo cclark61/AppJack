@@ -8,7 +8,7 @@
 * @license		http://www.gnu.org/licenses/lgpl-3.0.txt
 * @link			http://www.emonlade.net/appjack/
 * @version		0.5.1
-* @updated		Started: 4/23/2013, Updated: 7/26/2013
+* @updated		Started: 4/23/2013, Updated: 9/12/2013
 **/
 //***************************************************************************
 
@@ -215,4 +215,30 @@ function cleanURL(url, keep_qs, ending_slash)
 	}
 
 	return url;
+}
+
+//=====================================================================
+//=====================================================================
+// Sort Object Function
+//=====================================================================
+//=====================================================================
+function sortObject(obj, sortFunc)
+{
+	var tuples = [];
+	for (var key in obj) { tuples.push([key, obj[key]]); }
+
+	if (typeof(sortFunc) == 'function') {
+		tuples.sort(function(o1, o2) {
+			return sortFunc(o1, o2);
+		});	  
+	}
+	else {
+		tuples.sort(function(a, b) {
+		    a = a[1];
+		    b = b[1];
+		    return a < b ? -1 : (a > b ? 1 : 0);
+		});
+	}
+
+	return tuples;
 }
